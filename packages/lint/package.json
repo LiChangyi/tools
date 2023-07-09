@@ -1,0 +1,50 @@
+{
+  "name": "@licy-fe/lint",
+  "version": "0.0.0-beta.1",
+  "description": "Licy 's common lint configuration package",
+  "exports": {
+    ".": "./base.js",
+    "./ts": "./ts.js",
+    "./react": "./react.js",
+    "./vue": "./vue.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "base.js",
+    "ts.js",
+    "react.js",
+    "vue.js",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "eslint": "^8.35.0",
+    "unbuild": "^0.8.10"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.4"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
